@@ -25,8 +25,8 @@ fun StepCounterScreen(onBack: () -> Unit) {
     var stepCount by remember { mutableStateOf(0) }
     var lastStepTime by remember { mutableStateOf(0L) }
 
-    val stepThreshold = 11.5f       // Umbral para detectar paso
-    val stepInterval = 300          // Tiempo mínimo entre pasos (ms)
+    val stepThreshold = 11.5f
+    val stepInterval = 300
 
     val sensorListener = remember {
         object : SensorEventListener {
